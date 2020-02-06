@@ -306,5 +306,6 @@ Options:
 --mis <INT>\t\t\tMaximal genome mismatches (default: 0)
 --misTE <INT>\t\t\tMaximal TE mismatches (default: 3)
 --PPPon <true|false>\t\tPing-pong partners (default: true)
+--threads <INT>\t\t\tNumber of threads used (default: 1)
 ";
 }
