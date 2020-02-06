@@ -1,6 +1,6 @@
 package sRNAPipe;
 
-our $VERSION = '1.1';
+our $VERSION = '1.1.1';
 
 =head1 NAME
 

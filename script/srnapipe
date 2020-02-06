@@ -22,7 +22,7 @@ if(@ARGV) {
     my ( $ref, $tRNAs, $rRNAs, $snRNAs, $miRNAs, $transcripts, $TE );
     my ( $si_min, $si_max, $pi_min, $pi_max );
     my ( $build_index, $build_tRNAs, $build_rRNAs, $build_snRNAs, $build_miRNAs, $build_transcripts, $build_TE );
-    my $max_procs = 8;
+    my $max_procs = 1;
     
     ( $build_index, $build_tRNAs, $build_rRNAs, $build_snRNAs, $build_miRNAs, $build_transcripts, $build_TE ) = (0,0,0,0,0,0,0);
     ( $min, $max, $mis, $misTE, $si_min, $si_max, $pi_min, $pi_max, $dir ) = ( 18, 29, 0, 3, 21, 21, 23, 29 );
@@ -56,7 +56,8 @@ if(@ARGV) {
         "build_miRNAs" => \$build_miRNAs,
         "build_transcripts" => \$build_transcripts,
         "build_rRNAs" => \$build_rRNAs,
-        "build_TE" => \$build_TE
+        "build_TE" => \$build_TE,
+        "threads:1" => \$max_procs
     );
     
     my $fq_collection = 'fastq_dir/';
