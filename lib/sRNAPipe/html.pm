@@ -279,7 +279,7 @@ sub header
   <link href=\"css/bootstrap-table.css\" rel=\"stylesheet\">
   <style type=\"text/css\">
   body {
-    padding-top: 60px;
+    padding-top: 140px;
     padding-bottom: 40px;
   }
   div#page {
