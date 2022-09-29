@@ -292,7 +292,15 @@ sub sam_count_mis
         else
         {
             my @line = split (/\t/,$_);
-            my @seq = split //, $line[9];
+            my $sequence = $line[9];
+
+            if ($line[1] & 16)
+            {
+                $sequence = reverse($sequence);
+                $sequence =~ tr/atgcuATGCU/tacgaTACGA/;
+            }
+
+            my @seq = split //, $sequence;
             if ( $line[1]    == 16 || $line[1] == 0 )
             {
                 $number{ $line[2] }->[0]++;
