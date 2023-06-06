@@ -1,7 +1,7 @@
 sRNAPipe-cli
 ============
 
-sRNAPipe version 1.2
+sRNAPipe version 1.2.1
 
 
 

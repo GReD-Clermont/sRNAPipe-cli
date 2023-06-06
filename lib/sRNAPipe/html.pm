@@ -524,7 +524,6 @@ sub footer
   <!-- Placed at the end of the document so the pages load faster -->
   <script type=\"text/javascript\" src=\"js/filter.js\"></script>
   <script type=\"text/javascript\" src=\"js/jquery.js\"></script>
-  <script type=\"text/javascript\" src=\"js/jquery-1.3.2.js\"></script>
   <script type=\"text/javascript\" src=\"js/jquery.galleriffic.js\"></script>
   <script type=\"text/javascript\" src=\"js/jquery.opacityrollover.js\"></script>
   <script type=\"text/javascript\" src=\"js/bootstrap-table.js\"></script>
