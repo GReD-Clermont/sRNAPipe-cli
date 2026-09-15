@@ -120,6 +120,7 @@ a:focus {
 .span6 {
   flex: 0 0 50%;
   max-width: 50%;
+  width: 50%;
 }
 
 .table {
