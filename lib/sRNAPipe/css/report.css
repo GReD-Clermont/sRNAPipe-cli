@@ -110,6 +110,8 @@ a:focus {
 [class^=\"span\"],
 [class*=\" span\"] {
   box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
   width: 100%;
   padding: 0 15px;
 }
@@ -170,7 +172,11 @@ a:focus {
 
 @media (max-width: 767px) {
   body {
-    padding-top: 180px;
+    padding-top: 40px;
+  }
+
+  .navbar {
+    position: static;
   }
 
   .span6 {
@@ -178,8 +184,14 @@ a:focus {
     max-width: 100%;
   }
 
+  .brand {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
   .nav {
     display: flex;
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
