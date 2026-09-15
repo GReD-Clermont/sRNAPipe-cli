@@ -118,6 +118,7 @@ a:focus {
 }
 
 .span6 {
+  box-sizing: border-box;
   flex: 0 0 50%;
   max-width: 50%;
   width: 50%;
