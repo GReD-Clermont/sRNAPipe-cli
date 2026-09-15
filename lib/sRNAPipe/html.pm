@@ -513,10 +513,10 @@ sub footer
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script type=\"text/javascript\" src=\"js/filter.js\"></script>
-  <script type=\"text/javascript\" src=\"js/report.js\"></script>
   <script type=\"text/javascript\" src=\"js/jquery.js\"></script>
   <script type=\"text/javascript\" src=\"js/jquery.galleriffic.js\"></script>
   <script type=\"text/javascript\" src=\"js/jquery.opacityrollover.js\"></script>
+  <script type=\"text/javascript\" src=\"js/report.js\"></script>
   <script type=\"text/javascript\">
   jQuery(document).ready(function(\$) {
     // We only want these styles applied when javascript is enabled
