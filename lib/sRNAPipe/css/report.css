@@ -149,10 +149,23 @@ a:focus {
   user-select: none;
 }
 
+.table th[data-sortable=\"true\"]:focus {
+  outline: 2px solid #0b63b6;
+  outline-offset: -2px;
+}
+
 .table th[data-sortable=\"true\"]::after {
   content: \" \\2195\";
   color: #777;
   font-size: 0.85em;
+}
+
+.table th[data-sort-order=\"asc\"]::after {
+  content: \" \\2191\";
+}
+
+.table th[data-sort-order=\"desc\"]::after {
+  content: \" \\2193\";
 }
 
 @media (max-width: 767px) {
