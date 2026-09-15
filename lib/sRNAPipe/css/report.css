@@ -115,7 +115,8 @@ a:focus {
 }
 
 .span6 {
-  width: 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .table {
@@ -160,7 +161,8 @@ a:focus {
   }
 
   .span6 {
-    width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
   }
 
   .nav {
