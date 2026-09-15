@@ -274,9 +274,7 @@ sub header
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
   <meta name=\"description\" content=\"\">
   <meta name=\"author\" content=\"\">
-  <!-- Le styles -->
-  <link href=\"css/bootstrap.css\" rel=\"stylesheet\">
-  <link href=\"css/bootstrap-table.css\" rel=\"stylesheet\">
+  <link href=\"css/report.css\" rel=\"stylesheet\">
   <style type=\"text/css\">
   body {
     padding-top: 140px;
@@ -471,7 +469,6 @@ sub header
   }
 
   </style>
-  <link href=\"css/bootstrap-responsive.css\" rel=\"stylesheet\">
   </head>
   <body>
   ";
@@ -485,13 +482,7 @@ sub navbar
   <div class=\"navbar navbar-inverse navbar-fixed-top\">
   <div class=\"navbar-inner\">
   <div class=\"container\">
-  <button type=\"button\" class=\"btn btn-navbar\" data-toggle=\"collapse\" data-target=\".nav-collapse\">
-  <span class=\"icon-bar\"></span>
-  <span class=\"icon-bar\"></span>
-  <span class=\"icon-bar\"></span>
-  </button>
   <a class=\"brand\" href=\"report.txt\">Report</a>
-  <div class=\"nav-collapse collapse\">
   <ul class=\"nav\">
   ";
   for (my $i = 0 ; $i <= $#{$fastq}; $i++)
@@ -503,7 +494,6 @@ sub navbar
   }
   print $file "
   </ul>
-  </div><!--/.nav-collapse -->
   </div>
   </div>
   </div>";
@@ -523,11 +513,10 @@ sub footer
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script type=\"text/javascript\" src=\"js/filter.js\"></script>
+  <script type=\"text/javascript\" src=\"js/report.js\"></script>
   <script type=\"text/javascript\" src=\"js/jquery.js\"></script>
   <script type=\"text/javascript\" src=\"js/jquery.galleriffic.js\"></script>
   <script type=\"text/javascript\" src=\"js/jquery.opacityrollover.js\"></script>
-  <script type=\"text/javascript\" src=\"js/bootstrap-table.js\"></script>
-  <script type=\"text/javascript\" src=\"js/bootstrap.min.js\"></script>
   <script type=\"text/javascript\">
   jQuery(document).ready(function(\$) {
     // We only want these styles applied when javascript is enabled
